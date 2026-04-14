@@ -1,0 +1,894 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0b2a4a;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    border-radius: 5px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* SEARCH */
+.search-box input {
+    padding: 7px;
+    width: 200px;
+    border: none;
+}
+
+.search-box button {
+    padding: 7px 10px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+}
+
+/* MENU */
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: orange;
+}
+
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 0 10px gray;
+    top: 30px;
+}
+
+/* SHOW DROPDOWN */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* SUBMENU */
+.submenu {
+    position: relative;
+}
+
+.submenu a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+/* SUBMENU HOVER */
+.submenu a:hover {
+    background: #f0f0f0;
+}
+
+/* SUBMENU CONTENT */
+.submenu-content {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    background: white;
+    min-width: 200px;
+    box-shadow: 0 0 10px gray;
+}
+
+/* SHOW SUBMENU */
+.submenu:hover .submenu-content {
+    display: block;
+}
+
+
+/* SHOP PAGE */
+.shop-container {
+    display: flex;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+/* SIDEBAR */
+.shop-sidebar {
+    width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.shop-sidebar h3 {
+    margin-top: 20px;
+}
+
+.shop-sidebar a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+.shop-sidebar a:hover {
+    background: orange;
+    color: white;
+}
+
+/* PRODUCTS GRID */
+.shop-products {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20px;
+}
+
+/* PRODUCT CARD (reuse same) */
+.product {
+    background: white;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product button {
+    background: orange;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MAIN AREA */
+.shop-main {
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* TOP BAR */
+.shop-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* PRODUCT IMPROVEMENT */
+.product {
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+/* BUTTON STYLE */
+.product button {
+    background: orange;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background: darkorange;
+}
+
+
+
+
+/* CART PAGE */
+.cart-container {
+    padding: 40px;
+    background: #f5f5f5;
+}
+
+.cart-container h2 {
+    margin-bottom: 20px;
+}
+
+/* CART ITEMS */
+.cart-items {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.cart-item img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+.item-details h3 {
+    margin: 0;
+}
+
+/* TOTAL */
+.cart-total {
+    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    text-align: right;
+}
+
+.cart-total button {
+    padding: 10px 20px;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-total button:hover {
+    background: darkorange;
+}
+
+
+
+
+
+
+/* ACCOUNT PAGE */
+.account-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f5f5;
+}
+
+/* SIDEBAR */
+.account-sidebar {
+    width: 220px;
+    background: #0b2a4a;
+    color: white;
+    padding: 20px;
+}
+
+.account-sidebar h3 {
+    margin-bottom: 20px;
+}
+
+.account-sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.account-sidebar a:hover {
+    background: orange;
+}
+
+
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+  /* DASHBOARD STATS */
+.dashboard-stats {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.stat-box {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.stat-box h3 {
+    font-size: 30px;
+    color: orange;
+}
+
+/* QUICK ACTIONS */
+.quick-actions {
+    margin-top: 20px;
+}
+
+.quick-actions button {
+    margin-right: 10px;
+    padding: 10px 15px;
+    background: #0b2a4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.quick-actions button:hover {
+    background: black;
+}
+
+
+/* ORDERS */
+.orders-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+/* TABLE */
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th {
+    background: #0b2a4a;
+    color: white;
+    padding: 10px;
+}
+
+.orders-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+/* STATUS BADGES */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.delivered {
+    background: green;
+}
+
+.pending {
+    background: orange;
+}
+
+.cancelled {
+    background: red;
+}
+
+/* ADDRESS */
+.address-box {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* SAVED ADDRESS */
+.saved-address {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+/* EDIT ADDRESS */
+.edit-address {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.edit-address input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background: darkorange;
+}
+
+
+
+/* WISHLIST */
+.wishlist-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* CARD */
+.wishlist-card {
+    background: white;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    transition: 0.3s;
+}
+
+.wishlist-card:hover {
+    transform: translateY(-5px);
+}
+
+/* IMAGE */
+.wishlist-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* BUTTONS */
+.cart-btn {
+    background: orange;
+    border: none;
+    padding: 8px;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.remove-btn {
+    background: red;
+    border: none;
+    padding: 8px;
+    color: white;
+    margin-top: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background: darkorange;
+}
+
+.remove-btn:hover {
+    background: darkred;
+}
+
+
+
+/* LOGOUT */
+.logout-box {
+    background: white;
+    padding: 30px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.logout-buttons {
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    padding: 10px 15px;
+    background: gray;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-btn:hover {
+    background: darkgray;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+
+/* SETTINGS */
+.settings-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    max-width: 400px;
+}
+
+.settings-box h3 {
+    margin-top: 20px;
+}
+
+.settings-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: orange;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.save-btn:hover {
+    background: darkorange;
+}
+
+/* CONTENT */
+.account-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.account-content h2 {
+    margin-bottom: 20px;
+}
+
+/* PROFILE BOX */
+.profile-box {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+
+
+
+/* CONTACT PAGE */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px;
+    background: #f5f5f5;
+}
+
+.contact-box {
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.contact-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.contact-box textarea {
+    height: 100px;
+}
+
+.contact-box button {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-box button:hover {
+    background: darkorange;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #0b2a4a;
+    color: white;
+    padding: 30px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.contact-info h3 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* AUTH PAGES */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.auth-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+}
+
+.auth-box h2 {
+    margin-bottom: 20px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    background: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.auth-box button:hover {
+    background: darkorange;
+}
+
+.auth-box a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* BANNER */
+/* HERO */
+.hero-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ff7e00, #ffb347);
+    padding: 70px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content h2 {
+    font-size: 35px;
+}
+
+.hero-content button {
+    padding: 12px 25px;
+    background: #0b2a4a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* OFFER STRIP */
+.offer-strip {
+    background: #0b2a4a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* SECTION */
+.section-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 28px;
+}
+
+/* CATEGORIES */
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #f5f5f5;
+    padding: 25px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: orange;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* PRODUCTS */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px lightgray;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product button {
+    background: orange;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+/* DEAL BOX */
+.deal-box {
+    background: #ffe0b2;
+    text-align: center;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.deal-box button {
+    padding: 10px 20px;
+    background: red;
+    color: white;
+    border: none;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background: #f5f5f5;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+/* FOOTER */
+.footer {
+    background: #0b2a4a;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-box h3 {
+    margin-bottom: 10px;
+}
+
+.footer-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-box a:hover {
+    color: orange;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
